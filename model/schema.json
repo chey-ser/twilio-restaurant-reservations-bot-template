@@ -1,0 +1,235 @@
+{
+    "friendlyName" : "deep-table-restaurant",
+    "logQueries" : true,
+    "uniqueName" : "deep-table-restaurant",
+    "defaults" : {
+        "defaults" : {
+            "assistant_initiation" : "task://welcome",
+            "fallback" : "task://fallback",
+            "collect" : {
+                "validate_on_failure" : "task://fallback"
+            }
+        }
+    },
+    "styleSheet" : {
+        "style_sheet" : {
+            "voice" : {
+                "say_voice" : "Polly.Salli"
+            }
+        }
+    },
+    "fieldTypes" : [],
+    "tasks" : [
+        {
+            "uniqueName" : "welcome",
+            "actions" : {
+                "actions" : [
+                    {
+                        "redirect" : ""
+                    }
+                ]
+            },
+            "fields" : [],
+            "samples" : [
+                {
+                    "language" : "en-US",
+                    "taggedText" : "what'us up"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "whatsup"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "what do you do"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "what can you do"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "sup"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "hey"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "hi there."
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "yo"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "hello"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "good afternoon"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "heya"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "hi!"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "good morning"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "Hello."
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "hi there"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "Hi"
+                }
+            ]
+        },
+        {
+            "uniqueName" : "get-specials",
+            "actions" : {
+                "actions" : [
+                    {
+                        "redirect" : ""
+                    }
+                ]
+            },
+            "fields" : [],
+            "samples" : [
+                {
+                    "language" : "en-US",
+                    "taggedText" : "What's today's specials?"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "what is the special today"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "do you have a special today"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "what do you have for special today"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I want today's special"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "dinner special"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "today's special"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "get today's special"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "Can you tell me what's the special today"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "are there any specials"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "specials"
+                }
+            ]
+        },
+        {
+            "uniqueName" : "make-reservation",
+            "actions" : {
+                "actions" : [
+                    {
+                        "redirect" : ""
+                    }
+                ]
+            },
+            "fields" : [],
+            "samples" : [
+                {
+                    "language" : "en-US",
+                    "taggedText" : "book a table"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "make a reservation"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I want to make a reservation"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I need a table"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I want to book a table"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I'd like to make a reservation please"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I would like to make a reservation"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "I'm looking for a table for dinner"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "make reservation"
+                },
+                {
+                    "language" : "en-US",
+                    "taggedText" : "make reservation please"
+                }
+            ]
+        },
+        {
+            "uniqueName" : "confirm-reservation",
+            "actions" : {
+                "actions" : [
+                    {
+                        "redirect" : ""
+                    }
+                ]
+            },
+            "fields" : [],
+            "samples" : []
+        },
+        {
+            "uniqueName" : "fallback",
+            "actions" : {
+                "actions" : [
+                    {
+                        "redirect" : ""
+                    }
+                ]
+            },
+            "fields" : [],
+            "samples" : []
+        }
+    ]
+}
